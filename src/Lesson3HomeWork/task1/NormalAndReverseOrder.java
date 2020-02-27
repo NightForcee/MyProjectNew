@@ -1,4 +1,4 @@
-package Lesson3HomeWork.Task1;
+package Lesson3HomeWork.task1;
 
 public class NormalAndReverseOrder {
     public static void main(String[] args) {

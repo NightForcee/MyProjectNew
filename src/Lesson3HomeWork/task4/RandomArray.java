@@ -1,6 +1,5 @@
-package Lesson3HomeWork.Task4;
+package Lesson3HomeWork.task4;
 
-import java.util.Arrays;
 import java.util.Random;
 
 public class RandomArray {

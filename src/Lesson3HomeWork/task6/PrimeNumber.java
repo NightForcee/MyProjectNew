@@ -1,4 +1,4 @@
-package Lesson3HomeWork.Task6;
+package Lesson3HomeWork.task6;
 
 import java.util.Scanner;
 

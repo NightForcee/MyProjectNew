@@ -1,6 +1,4 @@
-package Lesson3HomeWork.Task7;
-
-import org.w3c.dom.ls.LSOutput;
+package Lesson3HomeWork.task7;
 
 import java.util.Scanner;
 

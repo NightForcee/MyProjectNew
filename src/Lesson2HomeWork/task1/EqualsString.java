@@ -15,15 +15,13 @@ public class EqualsString {
         System.out.println("Введите второе слово:");
         test.text2 = sc.next();
 
-        if(test.equals(test.text, test.text2)){
+        if (test.equals(test.text, test.text2)) {
             System.out.println("Отлично! Слова одинаковы.");
-        }
-        else if (test.equalsIsIgnoreCase(test.text, test.text2)){
+        } else if (test.equalsIsIgnoreCase(test.text, test.text2)) {
             System.out.println("Хорошо. Почти одинаковы.");
-        }
-        else if (test.lenght()){
+        } else if (test.lenght()) {
             System.out.println("Ну, хотя бы они одной длины.");
-        }else {
+        } else {
             System.out.println("Слова не сочетаемы друг с другом!");
         }
     }

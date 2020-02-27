@@ -1,4 +1,4 @@
-package Lesson3HomeWork.Task2;
+package Lesson3HomeWork.task2;
 
 public class First100NaturalNumber {
     public static void main(String[] args) {
