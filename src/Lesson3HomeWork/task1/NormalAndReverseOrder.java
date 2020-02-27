@@ -9,7 +9,6 @@ public class NormalAndReverseOrder {
         System.out.println();
         for (int i = mark.length - 1; i >= 0; i--) {
             System.out.println(mark[i]);
-
         }
     }
 }

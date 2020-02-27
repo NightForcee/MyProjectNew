@@ -12,11 +12,9 @@ public class First100NaturalNumber {
                 i++;
             }
         }
-        for(i = 0; i < mark.length; ++i){
-            System.out.println(mark[i]+ " ");
+        for (i = 0; i < mark.length; ++i) {
+            System.out.println(mark[i] + " ");
         }
-
-
     }
 }
 

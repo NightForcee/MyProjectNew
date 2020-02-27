@@ -11,7 +11,6 @@ public class Factorial {
         return result;
     }
 
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите факториал (число): ");

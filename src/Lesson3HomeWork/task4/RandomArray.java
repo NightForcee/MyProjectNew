@@ -7,15 +7,13 @@ public class RandomArray {
         int[] array = new int[3];
         Random random = new Random();
         int j = 0;
-        for (int i = 0; i < array.length ; i++) {
+        for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(99);
             System.out.print(array[i] + " ");
         }
         System.out.println();
-        if (array[0] < array[1] & array[1] < array[2]){
+        if (array[0] < array[1] && array[1] < array[2]) {
             System.out.println("Данный массив является строго возврастающей прогрессией!");
         } else System.out.println("Данный массив не является строго возрастающей прогрессией!");
-
     }
-
 }
