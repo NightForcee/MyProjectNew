@@ -22,9 +22,10 @@ public class Time {
         this.hour = hour;
         this.min = min;
         this.sec = sec;
+        seconds = allSeconds();
     }
 
-    public int allSeconds() {
+    private int allSeconds() {
         int res = (hour * 60) * 60 + min * 60 + sec;
         System.out.println(res + " секунд");
         return res;
@@ -32,6 +33,10 @@ public class Time {
 
     public void printTime() {
         System.out.println("Вы ввели :" + "\n" + hour + "ч " + min + "м " + sec + "с ");
+    }
+
+    public int getSeconds() {
+        return seconds;
     }
 
     public static void main(String[] args) {
@@ -54,14 +59,10 @@ public class Time {
             int sec = sc.nextInt();
             Time time1 = new Time(hour, min, sec);
             time1.printTime();
-
+            time1.getSeconds();
         }
-
-
     }
 }
-
-
 
 
 
