@@ -2,10 +2,10 @@ package lesson7;
 
 public class BattleGround {
     public static void main(String[] args) {
-        Hero warrior = new Warrior("Wolk", 100,10,1);
+        Hero warrior = new Warrior("Wolk", 100, 10, 1);
 
-        Enemy zombie = new Zombie("BigLoser",100);
-        Enemy vampire = new Vampire("vampirka",100);
+        Enemy zombie = new Zombie("BigLoser", 100);
+        Enemy vampire = new Vampire("vampirka", 100);
 
         System.out.println();
         System.out.println("Мое здоровье перед началом боя = " + warrior.getHealth());

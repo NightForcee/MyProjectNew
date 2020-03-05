@@ -1,8 +1,8 @@
 package lesson7;
 
 public class Mage extends Hero {
-    Mage(String name, int health,int damage,int defense) {
-        super(name, health,damage,defense);
+    Mage(String name, int health, int damage, int defense) {
+        super(name, health, damage, defense);
     }
 
     @Override

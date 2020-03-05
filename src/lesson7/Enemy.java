@@ -12,7 +12,7 @@ public abstract class Enemy implements Mortal {
         this.health = health;
     }
 
-    Enemy(String name,int health) {
+    Enemy(String name, int health) {
         this.name = name;
         this.health = health;
     }
@@ -20,6 +20,7 @@ public abstract class Enemy implements Mortal {
     public void takeDamage(int damage) {
         health = health - damage;
     }
+
     abstract void attackHero(Hero a);
 
     public String getName() {
@@ -29,7 +30,8 @@ public abstract class Enemy implements Mortal {
     public void superSkillZombie() {
         health += 5;
     }
-    public void superSkillVampire(){
+
+    public void superSkillVampire() {
         health += 10;
     }
 
