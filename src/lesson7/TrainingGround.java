@@ -33,11 +33,12 @@ public class TrainingGround {
             if (zombie.getHealth() <= 30) {
                 zombie.superSkillZombie();
                 System.out.println("Zombie super skill!");
-            }
+            }else System.out.println("Я еще жив, грх-грх!  Зомби");
+
             if (vampire.getHealth() <= 30) {
                 vampire.superSkillVampire();
                 System.out.println("Vampire super skill!");
-            }
+            }else System.out.println("Я тоже еще живой, выпью всю твою кровь!   Вампир");
         }
     }
 }
