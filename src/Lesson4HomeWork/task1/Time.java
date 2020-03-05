@@ -25,7 +25,7 @@ public class Time {
         seconds = allSeconds();
     }
 
-    private int allSeconds() {
+    public int allSeconds() {
         int res = (hour * 60) * 60 + min * 60 + sec;
         System.out.println(res + " секунд");
         return res;
