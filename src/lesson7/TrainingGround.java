@@ -14,7 +14,5 @@ public class TrainingGround {
 //        System.out.println(enemy1.getHealth());
 //        archer.attackEnemy(enemy1);
 //        System.out.println(enemy1.getHealth());
-
     }
-
 }

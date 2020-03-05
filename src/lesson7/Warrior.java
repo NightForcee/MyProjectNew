@@ -13,5 +13,4 @@ public class Warrior extends Hero {
         a.takeDamage(damage);
         System.out.println("Атакую врага своим мечем!!! ");
     }
-
 }
