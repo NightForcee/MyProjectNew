@@ -1,14 +1,23 @@
 package lesson7;
 
 public class Zombie extends Enemy {
-    Zombie(String name, int health) {
-        super(name, health);
+    Zombie(String name, int health, int damage) {
+        super(name, health, damage);
     }
 
     @Override
-    void attackHero(Hero a) {
-        int attack = 5;
+    public void attackHero(Hero a) {
+        int attack;
+        attack = this.damage;
         a.takeDamage(attack);
-        System.out.println("Атакую героя, Грх-грх!!!!  мой урон 5");
+        System.out.println("Атакую героя, Грх-грх!!!!  мой урон: " + damage);
+    }
+
+    @Override
+    public void attackEnemy() {
+    }
+
+    @Override
+    public void attackHero() {
     }
 }

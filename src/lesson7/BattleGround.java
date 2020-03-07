@@ -1,53 +1,53 @@
 package lesson7;
 
-public class BattleGround {
+public abstract class BattleGround implements Mortal {
     public static void main(String[] args) {
-        Hero warrior = new Warrior("Wolk", 100, 10, 1);
+        Hero[] team1 = new Hero[2];
+        team1[0] = new Warrior("warrior", 100, 20, 4);
+        team1[1] = new Mage("mage", 100, 18, 3);
 
-        Enemy zombie = new Zombie("BigLoser", 100);
-        Enemy vampire = new Vampire("vampirka", 100);
+        Enemy[] team2 = new Enemy[2];
+        team2[0] = new Zombie("zombie", 100, 14);
+        team2[1] = new Vampire("vampire", 100, 13);
 
-        System.out.println();
-        System.out.println("Мое здоровье перед началом боя = " + warrior.getHealth());
-        System.out.println();
-        warrior.attackEnemy(zombie);
-        System.out.println("Здоровье зомби, после удара моего меча = " + zombie.getHealth());
-
-        System.out.println();
-        warrior.superSkillWarrior();
-        System.out.println("Использую супер способность! " + "Мое здоровье возрасло до " + warrior.getHealth() + ", защита до " + warrior.defense + ", урон до " + warrior.damage);
-
-        System.out.println();
-        zombie.attackHero(warrior);
-        System.out.println("Зомби атаковал меня и оставил здоровья = " + warrior.getHealth());
-
-        System.out.println();
-        vampire.attackHero(warrior);
-        System.out.println("Зомби атаковал меня и оставил здоровья = " + warrior.getHealth());
-
-        System.out.println();
-        zombie.attackHero(warrior);
-        System.out.println("Зомби атаковал меня и оставил здоровья = " + warrior.getHealth());
-
-        System.out.println();
-        vampire.superSkillVampire();
-        System.out.println("Вампир использовал способность, его здоровье возрасло = " + vampire.getHealth());
-
-        System.out.println();
-        zombie.superSkillZombie();
-        System.out.println("Зомби использовал способность, его здоровье возрасло = " + vampire.getHealth());
-
-        System.out.println();
-        warrior.superSkillWarrior();
-        System.out.println("Использую супер способность! " + "Мое здоровье возрасло до " + warrior.getHealth() + ", защита до " + warrior.defense + ", урон до " + warrior.damage);
-
-        System.out.println();
-        warrior.attackEnemy(zombie);
-        System.out.println("Здоровье зомби после моего удара = " + zombie.getHealth());
-
-        System.out.println();
-        warrior.attackEnemy(vampire);
-        System.out.println("Здоровье вампира после моего удара = " + vampire.getHealth());
-
+        while (team2[0].isAlive() && team1[0].isAlive()) {
+            if (team1[0].getHealth() <= 40) {
+                team1[0].superSkillWarrior();
+            }
+            if (team1[0].isAlive()) {
+                team1[0].attackEnemy(team2[0]);
+                team1[0].attackEnemy(team2[1]);
+            } else System.out.println("Воин умер...");
+            if (team1[1].isAlive()) {
+                team1[1].attackEnemy(team2[0]);
+                team1[1].attackEnemy(team2[1]);
+            } else System.out.println("Маг умер...");
+            if (team1[0].isAlive() && team1[1].isAlive()) {
+            } else {
+                System.out.println("Команда Героев умерла...");
+                break;
+            }
+            if (team2[0].isAlive()) {
+                team2[0].attackHero(team1[0]);
+                team2[0].attackHero(team1[1]);
+            } else System.out.println("Зомби умер...");
+            if (team2[0].getHealth() <= 0) {
+                int count = 0;
+                while (count == 0) {
+                    count++;
+                    team2[0].superSkillZombie();
+                }
+                continue;
+            }
+            if (team2[1].isAlive()) {
+                team2[1].attackHero(team1[0]);
+                team2[1].attackHero(team1[1]);
+            } else System.out.println("Вампир умер...");
+            if (team2[0].isAlive() && team2[1].isAlive()) {
+            } else {
+                System.out.println("Команда Противников умерла...");
+                break;
+            }
+        }
     }
 }

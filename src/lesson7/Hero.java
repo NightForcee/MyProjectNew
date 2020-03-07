@@ -24,8 +24,14 @@ public abstract class Hero implements Mortal {
         this.health = health;
         this.damage = damage;
         this.defense = defense;
-
     }
+
+    void superSkillWarrior() {
+        this.damage += 5;
+        this.health += 5;
+        System.out.println("super skill!!!");
+    }
+
 
     public void takeDamage(int damage) {
         health = health - (damage - defense);
@@ -39,11 +45,5 @@ public abstract class Hero implements Mortal {
         return false;
     }
 
-    void superSkillWarrior() {
-        health += 10;
-        defense += 2;
-        damage += 10;
-    }
-
-    protected abstract void attackEnemy(Enemy a);
+    public abstract void attackEnemy(Enemy a);
 }

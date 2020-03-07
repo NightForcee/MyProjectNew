@@ -1,13 +1,23 @@
 package lesson7;
 
 public class Vampire extends Enemy {
-    Vampire(String name, int health) {
-        super(name, health);
+    Vampire(String name, int health, int damage) {
+        super(name, health, damage);
     }
 
-    void attackHero(Hero a) {
-        int attack = 15;
+    @Override
+    public void attackHero(Hero a) {
+        int attack;
+        attack = this.damage;
         a.takeDamage(attack);
-        System.out.println("Я вампир, я выпью всю твою кровь!!!!  мой урон 15");
+        System.out.println("Я вампир, я выпью всю твою кровь!!!!  мой урон: " + damage);
+    }
+
+    @Override
+    public void attackEnemy() {
+    }
+
+    @Override
+    public void attackHero() {
     }
 }

@@ -6,9 +6,18 @@ public class Mage extends Hero {
     }
 
     @Override
-    protected void attackEnemy(Enemy a) {
-        int damage = 12;
+    public void attackEnemy(Enemy a) {
+        int damage;
+        damage = this.damage;
         a.takeDamage(damage);
-        System.out.println("Атакую врага своим посохом!!!  мой урон 25");
+        System.out.println("Атакую врага своим посохом!!!  мой урон: " + damage);
+    }
+
+    @Override
+    public void attackEnemy() {
+    }
+
+    @Override
+    public void attackHero() {
     }
 }

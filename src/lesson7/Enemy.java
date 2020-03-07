@@ -3,6 +3,7 @@ package lesson7;
 public abstract class Enemy implements Mortal {
     private String name;
     private int health;
+    int damage;
 
     public int getHealth() {
         return health;
@@ -12,28 +13,28 @@ public abstract class Enemy implements Mortal {
         this.health = health;
     }
 
-    Enemy(String name, int health) {
+    Enemy(String name, int health, int damage) {
         this.name = name;
         this.health = health;
+        this.damage = damage;
     }
 
     public void takeDamage(int damage) {
         health = health - damage;
     }
 
-    abstract void attackHero(Hero a);
+    public abstract void attackHero(Hero a);
 
     public String getName() {
         return name;
     }
 
-    public void superSkillZombie() {
-        health += 5;
+    void superSkillZombie() {
+        int c = 70;
+        health = c;
+        System.out.println("Я возродился, ГРХ-ГРХ");
     }
 
-    public void superSkillVampire() {
-        health += 10;
-    }
 
     @Override
     public boolean isAlive() {
@@ -43,3 +44,4 @@ public abstract class Enemy implements Mortal {
         return false;
     }
 }
+

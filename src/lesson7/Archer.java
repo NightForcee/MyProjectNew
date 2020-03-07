@@ -17,9 +17,17 @@ public class Archer extends Hero {
     }
 
     @Override
-    protected void attackEnemy(Enemy a) {
+    public void attackEnemy(Enemy a) {
         int damage = 8;
         a.takeDamage(damage);
         System.out.println("Атакую врага своим луком!!! мой урон 15");
+    }
+
+    @Override
+    public void attackEnemy() {
+    }
+
+    @Override
+    public void attackHero() {
     }
 }
