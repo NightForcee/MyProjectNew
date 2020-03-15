@@ -10,11 +10,11 @@
 package lesson012;
 
 public class Task5 extends Exception {
-    public static void main(String[] args) {
-        Exception ex = new Exception("My exception");
+    public static void main(String[] args) throws Exception {
+        Exception ex = new ArrayIndexOutOfBoundsException("My exception");
         try {
             throw ex;
-        } catch (Exception e) {
+        } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Обработка исключения");
             System.out.println(ex.getMessage());
         }
