@@ -1,4 +1,4 @@
-package Lesson2HomeWork.task1;
+package lesson002.task1;
 
 public class EqualsStringDemo {
     String text;
