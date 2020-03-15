@@ -1,4 +1,4 @@
-package lesson7;
+package lesson007;
 
 public abstract class Enemy implements Mortal {
     private String name;

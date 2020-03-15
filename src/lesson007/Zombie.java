@@ -1,7 +1,7 @@
-package lesson7;
+package lesson007;
 
-public class Vampire extends Enemy {
-    Vampire(String name, int health, int damage) {
+public class Zombie extends Enemy {
+    Zombie(String name, int health, int damage) {
         super(name, health, damage);
     }
 
@@ -10,7 +10,7 @@ public class Vampire extends Enemy {
         int attack;
         attack = this.damage;
         a.takeDamage(attack);
-        System.out.println("Я вампир, я выпью всю твою кровь!!!!  мой урон: " + damage);
+        System.out.println("Атакую героя, Грх-грх!!!!  мой урон: " + damage);
     }
 
     @Override

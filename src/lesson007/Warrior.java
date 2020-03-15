@@ -1,7 +1,8 @@
-package lesson7;
+package lesson007;
 
-public class Mage extends Hero {
-    Mage(String name, int health, int damage, int defense) {
+public class Warrior extends Hero {
+
+    Warrior(String name, int health, int damage, int defense) {
         super(name, health, damage, defense);
     }
 
@@ -10,8 +11,9 @@ public class Mage extends Hero {
         int damage;
         damage = this.damage;
         a.takeDamage(damage);
-        System.out.println("Атакую врага своим посохом!!!  мой урон: " + damage);
+        System.out.println("Атакую врага своим мечем!!! Мой урон: " + damage);
     }
+
 
     @Override
     public void attackEnemy() {

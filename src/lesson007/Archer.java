@@ -9,7 +9,7 @@
  * * @version lesson7
  */
 
-package lesson7;
+package lesson007;
 
 public class Archer extends Hero {
     Archer(String name, int health, int damage, int defense) {

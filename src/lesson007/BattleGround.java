@@ -1,4 +1,4 @@
-package lesson7;
+package lesson007;
 
 public abstract class BattleGround implements Mortal {
     public static void main(String[] args) {
