@@ -15,7 +15,7 @@
  * @version Lesson4HomeWork
  */
 
-package Lesson4HomeWork;
+package lesson004;
 
 import java.util.Scanner;
 

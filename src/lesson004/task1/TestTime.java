@@ -1,6 +1,4 @@
-package Lesson4HomeWork.task1;
-
-import java.util.Scanner;
+package lesson004.task1;
 
 public class TestTime {
     public static void main(String[] args) {
