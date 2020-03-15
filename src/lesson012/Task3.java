@@ -7,7 +7,7 @@
  * @version lesson12
  */
 
-package lesson12;
+package lesson012;
 
 public class Task3 extends Exception {
     int a;

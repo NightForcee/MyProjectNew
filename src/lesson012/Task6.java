@@ -6,7 +6,7 @@
  * @version lesson12
  */
 
-package lesson12;
+package lesson012;
 
 import java.io.IOException;
 import java.util.Random;

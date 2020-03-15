@@ -6,7 +6,7 @@
  * @version lesson12
  */
 
-package lesson12;
+package lesson012;
 
 public class Task2 {
     public static void main(String[] args) {
