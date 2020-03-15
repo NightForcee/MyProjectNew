@@ -10,7 +10,7 @@
  * @version lesson5
  */
 
-package lesson5;
+package lesson005;
 
 import java.math.BigDecimal;
 
