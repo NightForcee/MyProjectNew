@@ -1,4 +1,4 @@
-package lesson8;
+package lesson008;
 
 public class Triangle implements Shape {
     private double side1;

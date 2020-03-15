@@ -1,4 +1,4 @@
-package lesson8;
+package lesson008;
 
 import static java.lang.Math.*;
 

@@ -1,4 +1,4 @@
-package lesson8;
+package lesson008;
 
 public class ShapeUtils {
     public static void main(String[] args) {

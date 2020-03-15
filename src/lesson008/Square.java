@@ -1,4 +1,4 @@
-package lesson8;
+package lesson008;
 
 public class Square implements Shape {
     private double side1;

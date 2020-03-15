@@ -6,7 +6,7 @@
  * @version lesson7
  */
 
-package lesson8;
+package lesson008;
 
 import org.apache.log4j.Logger;
 

@@ -1,4 +1,4 @@
-package lesson8;
+package lesson008;
 
 public class Rhombus implements Shape {
     private double side1;
