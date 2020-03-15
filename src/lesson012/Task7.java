@@ -3,7 +3,7 @@
  * Вызвать этот метод в конструкции try-catch-finally.
  * Протестировать работу блока finally.
  *
- * @autour Слиденко Артем
+ * @autour Artem Slidenko
  * @version lesson12
  */
 

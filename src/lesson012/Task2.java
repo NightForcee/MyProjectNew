@@ -2,7 +2,7 @@
  * Написать код, который создаст,
  * а затем отловит ArrayIndexOutOfBoundsException.
  *
- * @autour Слиденко Артем
+ * @autour Artem Slidenko
  * @version lesson12
  */
 
