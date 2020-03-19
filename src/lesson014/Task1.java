@@ -1,3 +1,11 @@
+/**
+ * Написать программу, проверяющую, является ли введённая строка адресом электронного почтового ящика.
+ * В названии почтового ящика разрешить использование только букв, цифр и нижних подчёркиваний, при этом оно должно начинаться с буквы.
+ * Возможные домены верхнего уровня: .org .com
+ *
+ * @author Artem Slidenko
+ * @version lesson014
+ */
 package lesson014;
 
 import java.util.Scanner;
@@ -12,7 +20,10 @@ public class Task1 {
         String str = sc.nextLine();
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(str);
-        boolean b = m.matches();
-        System.out.println(b);
+        if (m.find()) {
+            System.out.println("Корректный email");
+        } else {
+            System.out.println("Не корректный email");
+        }
     }
 }

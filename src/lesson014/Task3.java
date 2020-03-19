@@ -1,3 +1,10 @@
+/**
+ * Написать программу, выполняющую поиск в строке всех тегов абзацев, в т.ч. тех, у которых есть параметры, например <p id ="p1">,
+ * и замену их на простые теги абзацев <p>.
+ *
+ * @author Artem Slidenko
+ * @version lesson014
+ */
 package lesson014;
 
 import java.util.regex.Matcher;
@@ -11,9 +18,5 @@ public class Task3 {
         System.out.printf(str.replaceAll("\\<p(\\d)>*", "<p>"));
         Pattern p = Pattern.compile(regex);
         Matcher m = p.matcher(str);
-        while (m.find()) {
-            System.out.println(str.substring(m.start(), m.end()));
-        }
-        System.out.println(str.replaceAll(regex, strNew));
     }
 }
