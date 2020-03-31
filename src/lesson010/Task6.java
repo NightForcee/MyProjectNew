@@ -1,3 +1,10 @@
+/**
+ * Имеется текст. Следует составить для него частотный словарь.
+ *
+ * @author Artem SLidenko
+ * @version 1.0
+ */
+
 package lesson010;
 
 import java.util.*;

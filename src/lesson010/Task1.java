@@ -1,3 +1,11 @@
+/**Задание. Создать список оценок учеников с помощью ListIterator,
+ заполнить случайными оценками. Удалить неудовлетворительные оценки
+ из списка.
+ *
+ * @author Artem Slidenko
+ * @version 1.0
+ */
+
 package lesson010;
 
 import java.util.LinkedList;

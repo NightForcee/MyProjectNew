@@ -1,3 +1,10 @@
+/**
+ * Вывести учеников из списка в обратном порядке. (2 варианта решения).
+ *
+ * @author Artem SLidenko
+ * @version 1.0
+ */
+
 package lesson010;
 
 import java.util.LinkedList;
