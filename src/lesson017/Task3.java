@@ -11,6 +11,11 @@ package lesson017;
 import java.util.*;
 
 public class Task3 {
+    public static double average3(Map<String, Integer> map) {
+        int sum = map.entrySet().stream().filter(e -> e.getKey().length() < 7).mapToInt(s -> s.getValue()).sum();
+        return sum;
+    }
+
     public static void main(String[] args) {
         Map<String, Integer> map = new HashMap<>();
         map.put("Artem", 22);
@@ -19,7 +24,6 @@ public class Task3 {
         map.put("Vladikavkaz", 2233);
         map.put("Viktor", 1);
 
-        int sum = map.entrySet().stream().filter(e -> e.getKey().length() < 7).mapToInt(s -> s.getValue()).sum();
-        System.out.println("Сумма значении - " + sum);
+        System.out.println("Сумма значении - " + average3(map));
     }
 }

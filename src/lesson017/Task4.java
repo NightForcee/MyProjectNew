@@ -13,9 +13,13 @@ package lesson017;
 import java.util.*;
 
 public class Task4 {
+    public static String average4(List<Integer> list) {
+        String st = list.stream().map(e -> e.toString()).reduce("", String::concat);
+        return st;
+    }
+
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
-        String st = list.stream().map(e -> e.toString()).reduce("", String::concat);
-        System.out.println("Конкатенация строковых представлений : " + st);
+        System.out.println("Конкатенация строковых представлений : " + average4(list));
     }
 }

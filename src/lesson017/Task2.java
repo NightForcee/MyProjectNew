@@ -10,9 +10,12 @@ package lesson017;
 import java.util.*;
 
 public class Task2 {
+    public static double average2(List<String> list){
+        long count = list.stream().filter(s -> s.length() > 8).distinct().count();
+        return count;
+    }
     public static void main(String[] args) {
         List<String> lest1 = Arrays.asList("123qwerty", "artem228", "Artemka222222", "lol123lol123", "AS", "Slidenko");
-        long count = lest1.stream().filter(s -> s.length() > 8).distinct().count();
-        System.out.println("Колличество уникальных строк - " + count);
+        System.out.println("Колличество уникальных строк - " + average2(lest1));
     }
 }
